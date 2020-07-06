@@ -10,6 +10,7 @@ gem 'coffee-rails', '4.2.2'
 
 
 gem 'jbuilder',     '2.7.0'
+gem 'simple_calendar', '~> 2.0'
 
 gem 'jquery-rails', '4.3.3'
 gem 'fullcalendar-rails'

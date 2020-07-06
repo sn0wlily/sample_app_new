@@ -10,6 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20200706125353) do
 
   create_table "events", force: :cascade do |t|
@@ -19,6 +20,14 @@ ActiveRecord::Schema.define(version: 20200706125353) do
     t.datetime "start"
     t.datetime "end"
     t.string "allDay"
+=======
+ActiveRecord::Schema.define(version: 20200621220008) do
+
+  create_table "blogs", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.datetime "start_time"
+>>>>>>> 273e8611972169ca37392b28ba128165490f5605
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'blogs/index'
+
   get 'sessions/new'
 
   root 'static_pages#home'
@@ -22,6 +24,12 @@ Rails.application.routes.draw do
   post  '/events', to: 'events#update'
   
   delete '/logout',  to: 'sessions#destroy'
+  
+  root to: 'blogs#index'
+
+  resources :blogs
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :users
 end
