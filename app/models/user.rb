@@ -1,3 +1,9 @@
+=begin
+name: tsuchiya
+date: 2020/6/1
+purpose: user_model 
+=end
+
 class User < ApplicationRecord
   before_save { email.downcase! }
   validates :name,  presence: true, length: { maximum: 50 }

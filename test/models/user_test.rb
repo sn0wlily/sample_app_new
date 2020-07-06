@@ -1,3 +1,9 @@
+=begin
+name: tsuchiya
+date: 2020/7/6
+purpose: sign_up error test
+=end
+
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase

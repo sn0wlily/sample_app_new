@@ -1,5 +1,11 @@
 require 'test_helper'
 
+=begin
+name: tsuchiya
+date: 2020/6/1
+purpose: title test
+=end
+
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   
   def setup

@@ -1,3 +1,9 @@
+=begin
+name: tsuchiya
+date: 2020/7/6
+purpose: title test
+=end
+
 require 'test_helper'
 
 class ApplicationHelperTest < ActionView::TestCase
