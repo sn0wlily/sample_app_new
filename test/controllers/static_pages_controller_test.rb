@@ -1,9 +1,15 @@
 require 'test_helper'
 
+=begin
+name: tsuchiya
+date: 2020/6/1
+purpose: title test
+=end
+
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   
   def setup
-    @base_title = "Ruby on Rails Tutorial Sample App"
+    @base_title = "task suporter"
   end
   
   

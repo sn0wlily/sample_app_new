@@ -1,3 +1,9 @@
+=begin
+name: tsuchiya
+date: 2020/6/1
+purpose: logon_path helper
+=end
+
 module SessionsHelper
 
   # 渡されたユーザーでログインする

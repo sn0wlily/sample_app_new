@@ -1,3 +1,10 @@
+
+=begin
+name: tsuchiya
+date: 2020/6/1
+purpose: user controller
+=end
+
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
