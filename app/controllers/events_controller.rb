@@ -17,6 +17,19 @@ class UsersController < ApplicationController
         event.destroy
         redirect_to user_path(@user)
     end
+    
+    def event_post
+        @event = Event.find_by(id: params[:id])
+        @user = User.find_by(id: @post.user_id) #ユーザーのデータを取得する処理
+    end
+    
+    def event_new
+       @event = Event.new(
+        content: params[:content],
+        user_id: @current_user.id #ログインユーザーのidを取得して保存
+        )
+        #新規投稿保存後の処理 
+    end
 
     private
     def event_params
