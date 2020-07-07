@@ -24,6 +24,12 @@ class UsersController < ApplicationController
       render 'new'
     end
   end
+  
+  def show
+    @user = User.find(params[:id])
+    @events = Event.where(user_id: @user.id)
+    @event = Event.new
+  end
 
   private
 
@@ -31,4 +37,7 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password,
                                    :password_confirmation)
     end
+    
+
+
 end
