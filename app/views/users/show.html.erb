@@ -5,6 +5,8 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        <div id="calendar"></div>
+        <%= link_to 'New Event', new_event_path %>
       </h1>
     </section>
   </aside>
