@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  title: MyString
   etc: MyText
   start_date: 2020-07-12 00:06:13
   due: 2020-07-12 00:06:13
@@ -9,7 +9,7 @@ one:
   sinko: 1
 
 two:
-  name: MyString
+  title: MyString
   etc: MyText
   start_date: 2020-07-12 00:06:13
   due: 2020-07-12 00:06:13

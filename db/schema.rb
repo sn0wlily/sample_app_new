@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200713065357) do
+ActiveRecord::Schema.define(version: 20200713133115) do
 
   create_table "kadais", force: :cascade do |t|
-    t.string "name"
+    t.string "title"
     t.text "etc"
     t.datetime "start_date"
     t.datetime "due"
+    t.integer "imp"
+    t.integer "sinko"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-    t.integer "imp"
-    t.integer "sinko"
   end
 
   create_table "users", force: :cascade do |t|

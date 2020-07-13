@@ -2,7 +2,7 @@
 
 <p>
   <strong>課題名:</strong>
-  <%= @kadai.name %>
+  <%= @kadai.title %>
 </p>
 
 <p>
@@ -31,7 +31,7 @@
 </p>
 
 <%= link_to '編集', edit_kadai_path(@kadai) %> |
-<td><%= link_to '削除', @kadai, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+<td><%= link_to '削除', @kadai, method: :delete, data: { confirm: '本当に消しますか？' } %></td> 
 <br>
 <br>
 <br>

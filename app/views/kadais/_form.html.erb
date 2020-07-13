@@ -12,32 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :kadai_name %>
+    <%= form.label :課題名 %>
+    <%= form.text_field :title, id: :kadai_title %>
   </div>
 
   <div class="field">
-    <%= form.label :etc %>
+    <%= form.label :詳細 %>
     <%= form.text_area :etc, id: :kadai_etc %>
   </div>
 
   <div class="field">
-    <%= form.label :start_date %>
+    <%= form.label :開始日 %>
     <%= form.datetime_select :start_date, id: :kadai_start_date %>
   </div>
 
   <div class="field">
-    <%= form.label :due %>
+    <%= form.label :期限 %>
     <%= form.datetime_select :due, id: :kadai_due %>
   </div>
   
   <div class="field">
-    <%= form.label :imp %>
+    <%= form.label :重要度 %>
     <%= form.number_field :imp, id: :kadai_imp %>
   </div>
 
   <div class="field">
-    <%= form.label :sinko %>
+    <%= form.label :進行度 %>
     <%= form.number_field :sinko, id: :kadai_sinko %>
   </div>
 
