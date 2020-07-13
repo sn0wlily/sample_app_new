@@ -13,15 +13,15 @@
 ActiveRecord::Schema.define(version: 20200713133115) do
 
   create_table "kadais", force: :cascade do |t|
-    t.string "title"                      #課題名
-    t.text "etc"                          #詳細
-    t.datetime "start_date"               #開始日
-    t.datetime "due"                      #期限（提出日）
-    t.integer "imp"                       #重要度
-    t.integer "sinko"                     #進行度
-    t.datetime "created_at", null: false  #ここは仕様書に記載しなくていいです
-    t.datetime "updated_at", null: false  #ここは仕様書に記載しなくていいです
-    t.integer "user_id"                   #ユーザーID
+    t.string "title"
+    t.text "etc"
+    t.datetime "start_date"
+    t.datetime "due"
+    t.integer "imp"
+    t.integer "sinko"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
