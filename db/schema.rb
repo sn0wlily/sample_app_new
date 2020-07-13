@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20200713060109) do
 
   create_table "kadais", force: :cascade do |t|
     t.string "name"
-    t.text "description"
+    t.text "etc"
     t.datetime "start_date"
     t.datetime "due"
     t.datetime "created_at", null: false

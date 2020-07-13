@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  description: MyText
+  etc: MyText
   start_date: 2020-07-12 00:06:13
   due: 2020-07-12 00:06:13
 
 two:
   name: MyString
-  description: MyText
+  etc: MyText
   start_date: 2020-07-12 00:06:13
   due: 2020-07-12 00:06:13

@@ -72,6 +72,6 @@ class KadaisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def kadai_params
-      params.require(:kadai).permit(:name, :description, :start_date, :due,:user_id)
+      params.require(:kadai).permit(:name, :etc, :start_date, :due,:user_id)
     end
 end

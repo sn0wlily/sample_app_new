@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>課題名</th>
-      <th>Description</th>
+      <th>詳細</th>
       <th>Start date</th>
       <th>期限</th>
       <th colspan="3"></th>
@@ -17,7 +17,7 @@
     <% @kadais.each do |kadai| %>
       <tr>
         <td><%= kadai.name %></td>
-        <td><%= kadai.description %></td>
+        <td><%= kadai.etc %></td>
         <td><%= kadai.start_date %></td>
         <td><%= kadai.due %></td>
         <td><%= link_to 'Show', kadai %></td>
