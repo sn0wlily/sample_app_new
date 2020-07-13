@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200713152215) do
+ActiveRecord::Schema.define(version: 20200712032455) do
 
   create_table "kadais", force: :cascade do |t|
     t.string "title"
+    t.string "out"
     t.text "etc"
     t.datetime "start_date"
     t.datetime "due"
@@ -22,7 +23,6 @@ ActiveRecord::Schema.define(version: 20200713152215) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
-    t.string "out"
   end
 
   create_table "users", force: :cascade do |t|
