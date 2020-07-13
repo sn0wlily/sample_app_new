@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th>課題名</th>
       <th>Description</th>
       <th>Start date</th>
-      <th>End date</th>
+      <th>期限</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,7 +16,7 @@
   <tbody>
     <% @kadais.each do |kadai| %>
       <tr>
-        <td><%= kadai.title %></td>
+        <td><%= kadai.name %></td>
         <td><%= kadai.description %></td>
         <td><%= kadai.start_date %></td>
         <td><%= kadai.due %></td>

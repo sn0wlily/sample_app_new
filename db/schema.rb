@@ -10,10 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200713051811) do
+ActiveRecord::Schema.define(version: 20200713060109) do
 
   create_table "kadais", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.text "description"
     t.datetime "start_date"
     t.datetime "due"

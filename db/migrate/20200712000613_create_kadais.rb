@@ -1,7 +1,7 @@
 class CreateKadais < ActiveRecord::Migration[5.1]
   def change
     create_table :kadais do |t|
-      t.string :title
+      t.string :name
       t.text :description
       t.datetime :start_date
       t.datetime :due
