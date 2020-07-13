@@ -4,7 +4,7 @@ class CreateKadais < ActiveRecord::Migration[5.1]
       t.string :title
       t.text :description
       t.datetime :start_date
-      t.datetime :end_date
+      t.datetime :due
 
       t.timestamps
     end
