@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @kadai.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @kadai.description %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @kadai.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @kadai.end_date %>
+</p>
+
+<%= link_to 'Edit', edit_kadai_path(@kadai) %> |
+<%= link_to "Back", current_user %> |
+<td><%= link_to 'Destroy', @kadai, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+

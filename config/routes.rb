@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :kadais
   get 'sessions/new'
 
   root 'static_pages#home'
