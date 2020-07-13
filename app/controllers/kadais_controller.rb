@@ -29,7 +29,7 @@ class KadaisController < ApplicationController
 
     respond_to do |format|
       if @kadai.save
-        format.html { redirect_to @kadai, notice: 'Kadai was successfully created.' }
+        format.html { redirect_to "/kadais", notice: '無事、課題作成完了しました！プロフィールに戻ってカレンダーを見てね！' }
         format.json { render :show, status: :created, location: @kadai }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ class KadaisController < ApplicationController
       @kadais = Kadai.where(user_id: current_user.id)
     respond_to do |format|
       if @kadai.update(kadai_params)
-        format.html { redirect_to @kadai, notice: 'Kadai was successfully updated.' }
+        format.html { redirect_to @kadai, notice: '編集内容をアップデートしたよ！' }
         format.json { render :show, status: :ok, location: @kadai }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ class KadaisController < ApplicationController
   def destroy
     @kadai.destroy
     respond_to do |format|
-      format.html { redirect_to kadais_url, notice: 'Kadai was successfully destroyed.' }
+      format.html { redirect_to kadais_url, notice: '課題は死んだ...奴はもうどこにもいない' }
       format.json { head :no_content }
     end
   end
@@ -72,6 +72,6 @@ class KadaisController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def kadai_params
-      params.require(:kadai).permit(:title, :description, :start_date, :end_date,:user_id)
+      params.require(:kadai).permit(:title, :etc, :start_date, :due,:user_id, :imp, :sinko)
     end
 end

@@ -17,7 +17,7 @@ class KadaisControllerTest < ActionDispatch::IntegrationTest
 
   test "should create kadai" do
     assert_difference('Kadai.count') do
-      post kadais_url, params: { kadai: { description: @kadai.description, end_date: @kadai.end_date, start_date: @kadai.start_date, title: @kadai.title } }
+      post kadais_url, params: { kadai: { title: @kadai.title, description: @kadai.description, due: @kadai.due, start_date: @kadai.start_date,   imp: @kadai.imp, sinko: @kadai.sinko} }
     end
 
     assert_redirected_to kadai_url(Kadai.last)
@@ -34,7 +34,7 @@ class KadaisControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update kadai" do
-    patch kadai_url(@kadai), params: { kadai: { description: @kadai.description, end_date: @kadai.end_date, start_date: @kadai.start_date, title: @kadai.title } }
+    patch kadai_url(@kadai), params: { kadai: { title: @kadai.title, description: @kadai.description, due: @kadai.due, start_date: @kadai.start_date, imp: @kadai.imp, sinko: @kadai.sinko} }
     assert_redirected_to kadai_url(@kadai)
   end
 

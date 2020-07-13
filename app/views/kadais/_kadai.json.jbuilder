@@ -1,2 +1,2 @@
-json.extract! kadai, :id, :title, :description, :start_date, :end_date, :created_at, :updated_at, :user_id
+json.extract! kadai, :id, :title, :etc, :start_date, :due, :created_at, :updated_at, :user_id, :imp, :sinko
 json.url kadai_url(kadai, format: :json)
