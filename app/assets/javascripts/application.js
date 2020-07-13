@@ -33,7 +33,7 @@ $(function () {
     $(document).on('turbolinks:before-cache', clearCalendar);
 
     $('#calendar').fullCalendar({
-     events: '/events.json',
+     events: '/kadais.json',
                 //カレンダー上部を年月で表示させる
                 titleFormat: 'YYYY年 M月',
                 //曜日を日本語表示

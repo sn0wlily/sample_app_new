@@ -1,6 +1,6 @@
-class CreateEvents < ActiveRecord::Migration[5.1]
+class CreateKadais < ActiveRecord::Migration[5.1]
   def change
-    create_table :events do |t|
+    create_table :kadais do |t|
       t.string :title
       t.text :description
       t.datetime :start_date
