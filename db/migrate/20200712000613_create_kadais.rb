@@ -5,6 +5,8 @@ class CreateKadais < ActiveRecord::Migration[5.1]
       t.text :etc
       t.datetime :start_date
       t.datetime :due
+      t.integer :imp
+      t.integer :sinko
 
       t.timestamps
     end

@@ -11,7 +11,7 @@
 </p>
 
 <p>
-  <strong>Start date:</strong>
+  <strong>開始日:</strong>
   <%= @kadai.start_date %>
 </p>
 
@@ -20,7 +20,20 @@
   <%= @kadai.due %>
 </p>
 
-<%= link_to 'Edit', edit_kadai_path(@kadai) %> |
-<%= link_to "Back", current_user %> |
-<td><%= link_to 'Destroy', @kadai, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<p>
+  <strong>重要度:</strong>
+  <%= @kadai.imp %>
+</p>
+
+<p>
+  <strong>進行度:</strong>
+  <%= @kadai.sinko %>
+</p>
+
+<%= link_to '編集', edit_kadai_path(@kadai) %> |
+<td><%= link_to '削除', @kadai, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+<br>
+<br>
+<br>
+<%= link_to "プロフィールへ", current_user %> 
 

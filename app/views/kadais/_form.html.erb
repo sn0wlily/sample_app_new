@@ -30,6 +30,16 @@
     <%= form.label :due %>
     <%= form.datetime_select :due, id: :kadai_due %>
   </div>
+  
+  <div class="field">
+    <%= form.label :imp %>
+    <%= form.number_field :imp, id: :kadai_imp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sinko %>
+    <%= form.number_field :sinko, id: :kadai_sinko %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
