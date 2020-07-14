@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>課題名:</strong>
+  <%= @kadai.title %>
+</p>
+
+<p>
+  <strong>詳細:</strong>
+  <%= @kadai.etc %>
+</p>
+
+<p>
+  <strong>開始日:</strong>
+  <%= @kadai.start_date %>
+</p>
+
+<p>
+  <strong>期限:</strong>
+  <%= @kadai.due %>
+</p>
+
+<p>
+  <strong>重要度:</strong>
+  <%= @kadai.imp %>
+</p>
+
+<p>
+  <strong>進行度:</strong>
+  <%= @kadai.sinko %>
+</p>
+
+<%= link_to '編集', edit_kadai_path(@kadai) %> |
+<td><%= link_to '削除', @kadai, method: :delete, data: { confirm: '本当に消しますか？' } %></td> 
+<br>
+<br>
+<br>
+<%= link_to "プロフィールへ", current_user %> 
+

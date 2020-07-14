@@ -1,0 +1,14 @@
+class CreateKadais < ActiveRecord::Migration[5.1]
+  def change
+    create_table :kadais do |t|
+      t.string :title
+      t.text :etc
+      t.datetime :start_date
+      t.datetime :due
+      t.integer :imp
+      t.integer :sinko
+
+      t.timestamps
+    end
+  end
+end

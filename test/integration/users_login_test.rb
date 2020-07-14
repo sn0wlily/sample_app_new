@@ -1,5 +1,11 @@
 require 'test_helper'
 
+=begin
+name: tsuchiya
+date: 2020/6/1
+purpose: logon_path test
+=end
+
 class UsersLoginTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:michael)

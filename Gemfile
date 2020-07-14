@@ -7,10 +7,13 @@ gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.2.0'
 gem 'coffee-rails', '4.2.2'
-gem 'jquery-rails', '4.3.1'
-gem 'turbolinks',   '5.0.1'
+
 gem 'jbuilder',     '2.7.0'
 gem 'whenever', require: false
+
+gem 'jquery-rails', '4.3.3'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
@@ -34,7 +37,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.20.0'
+  gem 'sqlite3', '1.3.13'
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります

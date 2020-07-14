@@ -2,16 +2,24 @@
 #
 # It's helpful, but not entirely necessary to understand cron before proceeding.
 # http://en.wikipedia.org/wiki/Cron
-
 # Example:
 #
+require File.expand_path(File.dirname(__FILE__) + "/environment")
+# ジョブの実行環境の指定
+#set :environment, :production
+
 set :environment, :development
+# 出力先のログファイルの指定
 set :output, { :error => 'log/error.log', :standard => 'log/cron.log' }
 #
-every 1.days do
-#   command "/usr/bin/some_great_command"
-#  runner "NotificationMailer.send_confirm_to_user"
+
+every 3.minutes do
+#:day, at: jst('0:00 am') do
   rake "mail_task:mailer"
+end
+
+every 3.minutes do
+  rake "task_sample:sample"
 end
 #
 # every 4.days do
