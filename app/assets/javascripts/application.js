@@ -40,15 +40,15 @@ $(function () {
                 dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
                 //ボタンのレイアウト
                 header: {
-                    left: '',
-                    center: 'title',
+                    left: 'title',
+                    center: 'month,agendaWeek,agendaDay',
                     right: 'today prev,next'
                 },
                 //終了時刻がないイベントの表示間隔
                 defaultTimedEventDuration: '03:00:00',
                 buttonText: {
-                    prev: '前',
-                    next: '次',
+                    prev: '<',
+                    next: '>',
                     prevYear: '前年',
                     nextYear: '翌年',
                     today: '今日',

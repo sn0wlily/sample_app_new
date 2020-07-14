@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 20200712032455) do
 
   create_table "kadais", force: :cascade do |t|
     t.string "title"
+    t.string "out"
     t.text "etc"
     t.datetime "start_date"
     t.datetime "due"
