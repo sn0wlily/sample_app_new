@@ -1,3 +1,9 @@
+=begin
+name: tanaka
+date: 2020/7/13
+purpose: application
+=end
+
 class KadaisController < ApplicationController
   before_action :set_kadai, only: [:show, :edit, :update, :destroy]
 

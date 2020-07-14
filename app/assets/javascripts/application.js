@@ -1,3 +1,9 @@
+
+//name: tanaka
+//date: 2020/7/13
+//purpose: application
+
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -47,8 +53,8 @@ $(function () {
                 //終了時刻がないイベントの表示間隔
                 defaultTimedEventDuration: '03:00:00',
                 buttonText: {
-                    prev: '<',
-                    next: '>',
+                    prev: '前',
+                    next: '次',
                     prevYear: '前年',
                     nextYear: '翌年',
                     today: '今日',
