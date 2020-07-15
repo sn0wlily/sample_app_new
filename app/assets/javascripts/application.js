@@ -1,3 +1,9 @@
+
+//name: tanaka
+//date: 2020/7/13
+//purpose: application
+
+
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -40,8 +46,8 @@ $(function () {
                 dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
                 //ボタンのレイアウト
                 header: {
-                    left: '',
-                    center: 'title',
+                    left: 'title',
+                    center: 'month,agendaWeek,agendaDay',
                     right: 'today prev,next'
                 },
                 //終了時刻がないイベントの表示間隔

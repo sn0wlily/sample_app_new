@@ -1,3 +1,9 @@
+=begin
+name: tanaka
+date: 2020/7/13
+purpose: routes
+=end
+
 Rails.application.routes.draw do
 
   resources :kadais

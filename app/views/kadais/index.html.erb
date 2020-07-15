@@ -1,3 +1,9 @@
+<!-
+name: tanaka
+date: 2020/7/13
+purpose: index
+->
+
 <p id="notice"><%= notice %></p>
 
 <h1>課題一覧</h1>
@@ -6,6 +12,7 @@
   <thead>
     <tr>
       <th>課題名  | </th>
+      <th>科目名  |</th>
       <th>詳細  | </th>
       <th>開始日  |</th>
       <th>期限  |</th>
@@ -19,6 +26,7 @@
     <% @kadais.each do |kadai| %>
       <tr>
         <td><%= kadai.title %></td>
+        <td><%= kadai.out%></td>
         <td><%= kadai.etc %></td>
         <td><%= kadai.start_date %></td>
         <td><%= kadai.due %></td>
@@ -33,5 +41,8 @@
 
 <br>
 
-<%= link_to '新規作成', new_kadai_path %><br>
-<%= link_to 'プロフィールに戻る', current_user%>
+
+<%= link_to '新規作成', new_kadai_path %>
+<br>
+<%= link_to "プロフィールへ戻る", current_user %>
+
