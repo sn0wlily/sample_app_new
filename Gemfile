@@ -9,6 +9,7 @@ gem 'uglifier',     '3.2.0'
 gem 'coffee-rails', '4.2.2'
 
 gem 'jbuilder',     '2.7.0'
+gem 'whenever', require: false
 
 gem 'jquery-rails', '4.3.3'
 gem 'fullcalendar-rails'
@@ -24,6 +25,7 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+  gem "letter_opener"
 end
 
 group :test do
