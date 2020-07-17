@@ -1,6 +1,12 @@
+=begin
+name: tsuchiya
+date: 2020/7/15
+purpose: mailer 
+=end
+
 class NotificationMailer < ActionMailer::Base
   default from: "tasksup.1b@gmail.com"
-
+  
   def send_confirm_to_user(kadai)
     @user = User.find(kadai.user_id)
     @kadai = kadai

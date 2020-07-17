@@ -1,3 +1,9 @@
+=begin
+name: tsuchiya
+date: 2020/7/15
+purpose: mailer detail
+=end
+
 if Rails.env.production?
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {

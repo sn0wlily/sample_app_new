@@ -1,3 +1,9 @@
+=begin
+name: tsuchiya
+date: 2020/7/15
+purpose: mailer raketask
+=end
+
 namespace :mail_task do
   desc "課題の締め切りと今日の日付を比較して・日前ならメールを送信する"
   task :mailer => :environment do

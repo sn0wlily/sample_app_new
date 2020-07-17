@@ -1,3 +1,9 @@
+=begin
+name: tsuchiya
+date: 2020/7/15
+purpose: cron　schedule
+=end
+
 # Use this file to easily define all of your cron jobs.
 #
 # It's helpful, but not entirely necessary to understand cron before proceeding.
@@ -19,6 +25,7 @@ set :output, { :error => 'log/error.log', :standard => 'log/cron.log' }
 
 
 every 1.day, at: jst('0:00 am') do
+  #1.minute do
   rake "mail_task:mailer"
 end
 
