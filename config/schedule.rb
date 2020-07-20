@@ -24,8 +24,8 @@ set :environment, :development
 set :output, { :error => 'log/error.log', :standard => 'log/cron.log' }
 
 
-every 1.day, at: "0:00 am" do
-  #1.minute do
+every 1.day, at: "5:00 pm" do
+#every 1.minute do
   rake "mail_task:mailer"
 end
 
