@@ -4,6 +4,15 @@ date: 2020/6/1
 purpose: user_model 
 =end
 
+=begin
+name: tsuchiya
+date: 2020/6/1
+Function: User
+Args: user.name user.email user.password 
+Return: user情報dbに登録
+=end
+
+
 class User < ApplicationRecord
   before_save { email.downcase! }
   validates :name,  presence: true, length: { maximum: 50 }

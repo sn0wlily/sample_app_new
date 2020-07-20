@@ -5,7 +5,17 @@ date: 2020/6/1
 purpose: user controller
 =end
 
+=begin
+name: tsuchiya
+date: 2020/6/1
+Function: UsersController 
+Args: user
+Return: なし
+=end
+
+
 class UsersController < ApplicationController
+    
   def show
     @user = User.find(params[:id])
   end

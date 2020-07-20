@@ -4,6 +4,15 @@ date: 2020/6/1
 purpose: logon_path helper
 =end
 
+=begin
+name: tsuchiya
+date: 2020/6/1
+Function: SessionsHelper
+Args: user_id
+Return: user
+=end
+
+
 module SessionsHelper
 
   # 渡されたユーザーでログインする

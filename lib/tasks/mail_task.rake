@@ -4,6 +4,15 @@ date: 2020/7/15
 purpose: mailer raketask
 =end
 
+=begin
+name: tsuchiya
+date: 2020/7/15
+Function: mail_task:mailer
+Args: kadai
+Return: NotificationMailer.send_confirm_to_user(kadai) 
+=end
+
+
 namespace :mail_task do
   desc "課題の締め切りと今日の日付を比較して・日前ならメールを送信する"
   task :mailer => :environment do

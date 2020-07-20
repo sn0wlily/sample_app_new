@@ -4,6 +4,15 @@ date: 2020/6/1
 purpose: logon_controller
 =end
 
+=begin
+name: tsuchiya
+date: 2020/6/1
+Function: SessionsController
+Args: user.email user.password
+Return: user
+=end
+
+
 class SessionsController < ApplicationController
   def new
   end

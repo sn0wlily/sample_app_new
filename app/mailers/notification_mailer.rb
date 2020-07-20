@@ -4,6 +4,15 @@ date: 2020/7/15
 purpose: mailer 
 =end
 
+=begin
+name: tsuchiya
+date: 2020/7/15
+Function: NotificationMailer
+Args: kadai
+Return: mail送信
+=end
+
+
 class NotificationMailer < ActionMailer::Base
   default from: "tasksup.1b@gmail.com"
   
