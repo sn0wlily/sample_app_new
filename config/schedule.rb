@@ -13,14 +13,14 @@ purpose: cron　schedule
 #
 require File.expand_path(File.dirname(__FILE__) + "/environment")
 # ジョブの実行環境の指定
-#set :environment, :production
+set :environment, :production
 
 # set PATH
 # ref: Rails cron whenever, bundle: command not found
 # https://stackoverflow.com/questions/9482298/rails-cron-whenever-bundle-command-not-found?answertab=votes#tab-top
 env :PATH, ENV['PATH']
 
-set :environment, :development
+#set :environment, :development
 # 出力先のログファイルの指定
 set :output, { :error => 'log/error.log', :standard => 'log/cron.log' }
 
