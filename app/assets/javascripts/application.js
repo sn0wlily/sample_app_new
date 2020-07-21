@@ -1,7 +1,7 @@
 
 //name: tanaka
 //date: 2020/7/13
-//purpose: application
+//purpose: calender view
 
 
 // This is a manifest file that'll be compiled into application.js, which will include all the files

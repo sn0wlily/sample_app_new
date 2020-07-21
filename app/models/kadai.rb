@@ -1,3 +1,11 @@
+=begin
+name: tanaka
+date: 2020/7/13
+Function: start_due_chaek , 選択範囲エラー
+Args: due
+Return: true or false
+=end
+
 class Kadai < ApplicationRecord
   validates :title,  presence: true, length: { maximum: 32 }
   validates :out,  presence: true, length: { maximum: 32 }
