@@ -42,10 +42,18 @@ purpose: show
   <%= @kadai.sinko %>
 </p>
 
-<%= link_to '編集', edit_kadai_path(@kadai) %> |
-<td><%= link_to '削除', @kadai, method: :delete, data: { confirm: '本当に消しますか？' } %></td> 
+<p class="font1"><%= link_to '編集', edit_kadai_path(@kadai) %> </p>|
+<td><p class="font1"><%= link_to '削除', @kadai, method: :delete, data: { confirm: '本当に消しますか？' } %></p></td> 
 <br>
 <br>
 <br>
-<%= link_to "プロフィールへ", current_user %> 
+<p class="font1"><%= link_to "プロフィールへ", current_user %> </p>
 
+<%= stylesheet_link_tag "middle", :media => "all" %>
+<%= stylesheet_link_tag "application", :media => "all" %>
+<%= stylesheet_link_tag "custom", :media => "all" %>
+<%= stylesheet_link_tag "kadais", :media => "all" %>
+<%= stylesheet_link_tag "scaffolds", :media => "all" %>
+<%= stylesheet_link_tag "sessions", :media => "all" %>
+<%= stylesheet_link_tag "static_pages", :media => "all" %>
+<%= stylesheet_link_tag "users", :media => "all" %>
