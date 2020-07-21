@@ -36,7 +36,7 @@ namespace :mail_task do
       end
       b = d2 - c
       puts(a,c)
-      if d1 >= b &&  d1 <= d2#比較
+      if d1 >= b &&  d1 < d2#比較
         NotificationMailer.send_confirm_to_user(kadai).deliver #メール送信
         
       else
