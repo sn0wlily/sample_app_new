@@ -15,14 +15,15 @@ purpose: show
     </section>
   </aside>
 </div>
-<%= link_to '新規作成', new_kadai_path %>
+<p class="font1"><%= link_to '新規作成', new_kadai_path %></p>|
 <br>
-<%= link_to '課題一覧', kadais_path %>
+<p class="font1"><%= link_to '課題一覧', kadais_path %></p>|
 <br>
 <br>
 <br>
 <div id="calendar"></div>
 
+<%= stylesheet_link_tag "middle", :media => "all" %>
 <%= stylesheet_link_tag "application", :media => "all" %>
 <%= stylesheet_link_tag "custom", :media => "all" %>
 <%= stylesheet_link_tag "kadais", :media => "all" %>
