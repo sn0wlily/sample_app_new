@@ -47,7 +47,7 @@ $(function () {
                 //ボタンのレイアウト
                 header: {
                     left: 'title',
-                    center: 'month,agendaWeek,agendaDay',
+                    center: 'month,agendaWeek',
                     right: 'today prev,next'
                 },
                 //終了時刻がないイベントの表示間隔
@@ -59,8 +59,7 @@ $(function () {
                     nextYear: '翌年',
                     today: '今日',
                     month: '月',
-                    week: '週',
-                    day: '日'
+                    week: '週'
                 },
                 //イベントの時間表示を２４時間に
                 timeFormat: "HH:mm",
@@ -68,5 +67,9 @@ $(function () {
                 eventColor: '#63ceef',
                 //イベントの文字色を変える
                 eventTextColor: '#000000',
+                eventRender: function(event, element) {
+                    element.css("font-size", "0.8em");
+                    element.css("padding", "5px");
+                }
     });
 });
